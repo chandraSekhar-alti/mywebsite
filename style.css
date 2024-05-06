@@ -185,23 +185,23 @@ span{
 @keyframes words{
     0%,
     20%{
-        content: 'web developer';
+        content: 'QA Tester';
     }
     21%,
     40%{
-        content: 'web designer';
+        content: 'Automation Engineer';
     }
     41%,
     60%{
-        content: 'photographer';
+        content: 'API Automation Tester';
     }
     61%,
     80%{
-        content: 'Blogger';
+        content: 'UI Automation Tester';
     }
     81%,
     100%{
-        content: 'tester';
+        content: 'Bug Hunter';
     }
 }
 @keyframes typing{
@@ -242,7 +242,7 @@ span{
 }
 .about-img img{
     position: relative;
-    width: 30vw;
+    width: 25vw;
     border-radius: 50%;
     top: 1rem;
     cursor: pointer;
@@ -282,7 +282,7 @@ span{
 }
 
 ::-webkit-scrollbar{
-    width: 5px;
+    width: 10px;
 }
 ::-webkit-scrollbar-thumb{
     background-color: var(--main-color);
