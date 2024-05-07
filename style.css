@@ -306,25 +306,42 @@ span{
     align-items: center;
     gap: 2rem;
 }
-.projects-box{
+.projects-box {
     border: 3px solid var(--main-color);
-    height: 300px;
+    height: 260px;
     border-radius: 1rem;
     cursor: pointer;
-    transition: 0.3 ease;
+    transition: 0.3s ease;
+    overflow: hidden;
+    padding: 2rem;
 }
-.projects-box:hover{
-    background:var(--main-color);
+.projects-box:hover {
+    background: var(--main-color);
     color: white;
     transform: scale(1.03);
+    /* Allow full content on hover */
+    overflow: visible;
 }
-.projects-box .projects-info{
+.projects-box:hover .projects-info {
+    -webkit-line-clamp: unset;
+    overflow: auto; 
+    white-space: normal;
+    max-height: 100%;
+}    
+
+.projects-box .projects-info {
     display: flex;
     flex-direction: column;
     text-align: left;
     justify-content: center;
     align-items: baseline;
-    padding: 5rem;
+    padding: 2rem;
+    /* Show 3 lines with ellipsis if there's more text */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;  /* Limit to 3 lines */
+    text-overflow: ellipsis;
 }
 .projects-info h4{
     font-size: 34px;
