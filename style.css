@@ -327,7 +327,12 @@ span{
     overflow: auto; 
     white-space: normal;
     max-height: 100%;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }    
+.projects-box:hover .projects-info::-webkit-scrollbar {
+    display: none;
+}
 
 .projects-box .projects-info {
     display: flex;
